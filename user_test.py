@@ -17,6 +17,12 @@ class TestUser(unittest.TestCase):
         """
         self.new_user = User("Cheryl", "cher1855")
 
+    def tearDown(self):
+        """
+        A tear down method that cleans up after each test case is run
+        """
+        User.user_list = []
+
     def test_init(self):
         """
         test_init test case to test if the object is initialized property
@@ -30,6 +36,15 @@ class TestUser(unittest.TestCase):
         """
         self.new_user.save_user()
         self.assertEqual(len(User.user_list),1)
+
+    def test_find_user_name(self):
+        """
+        test to check if one can find a user by name and to display the information provided
+        """
+        self.new_user.save_user()
+        found_user = User.find_name("Cheryl")
+
+        self.assertEqual(found_user.username,self.new_user.username)
 
 
 if __name__ == '__main__':

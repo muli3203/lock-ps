@@ -39,4 +39,11 @@ class User:
             if user.username == name:
                 return user
     
-    
+    @classmethod
+    def show_user(cls):
+        """
+        This is a method that returns the user_list
+        """
+        return cls.user_list
+
+   

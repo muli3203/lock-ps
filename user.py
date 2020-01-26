@@ -18,5 +18,8 @@ class User:
 
         self variable represents the instance of the object it self
         """
-
-    pass
+    def save_user(self):
+      """
+      save_user method saves the user objects into user_list
+      """  
+      User.user_list.append(self)

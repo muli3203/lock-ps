@@ -4,10 +4,10 @@ class Credential:
     """
     credential_list = []
 
-def __init__(self,username,password, appname):
-    self.username
-    self.password
-    self.appname
+def __init__(self, username, password, appname):
+    self.username = username
+    self.password = password
+    self.appname = appname
 
     """
     __init__ method help us define properties for the objects 

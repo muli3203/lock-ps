@@ -46,6 +46,13 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(found_user.username,self.new_user.username)
 
+    def test_show_user(self):
+        """
+        this is a method that returns all user list
+        """
+        self.assertEqual(User.show_user(), User.user_list)
+
+
 
 if __name__ == '__main__':
     unittest.main()

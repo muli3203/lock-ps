@@ -51,10 +51,10 @@ class User:
         """
         this is a method that checks if a user exists from the user_list
         """
-        check_user = ""
+        the_user = ""
         for user in User.user_list:
             if(user.username == name and user.password == password):
-                check_user=user.username
-                return check_user
+                the_user=user.username
+                return the_user
 
     

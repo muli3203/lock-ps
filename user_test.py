@@ -1,4 +1,4 @@
 import unittest
 
-from contact import contact
+from user import User
 

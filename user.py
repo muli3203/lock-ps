@@ -18,8 +18,25 @@ class User:
 
         self variable represents the instance of the object it self
         """
+
     def save_user(self):
       """
       save_user method saves the user objects into user_list
       """  
       User.user_list.append(self)
+
+    @classmethod
+    def find_name(cls, name):
+        """
+        A method that takes in a name and returns a name that matches the username.
+
+        Arguments:
+        name: the name to search.
+        Returns:
+        the name of the person that fits the username.
+        """
+        for user in cls.user_list:
+            if user.username == name:
+                return user
+    
+    

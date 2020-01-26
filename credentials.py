@@ -5,13 +5,15 @@ class Credential:
     credential_list = []
 
 def __init__(self, username, password, appname):
+    
+    """
+    __init__ method help us define properties for the objects 
+    """
     self.username = username
     self.password = password
     self.appname = appname
 
-    """
-    __init__ method help us define properties for the objects 
-    """
+
 
 def save_credential(self):
     """

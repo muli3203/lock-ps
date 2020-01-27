@@ -13,9 +13,6 @@ class Credential:
         self.password = password
         self.appname = appname
 
-    @classmethod
-    def credential_exist(cls):pass
-
     def save_credential(self):
         """
         the save credential method saves the user objects into the credential list

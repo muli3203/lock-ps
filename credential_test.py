@@ -28,5 +28,16 @@ class TestCredential(unittest.TestCase):
         """
         Credential.credential_list = []
 
+    def test_display_credential(self):
+        """
+        a test case to test the display of credentials 
+        """
+
+        self.new_credential.save_credential()
+        twitter = Credential("Cheryl", "twitter", "cher1855")
+        twitter.save_credential()
+        self.assertEqual(len(Credential.display_credential(twitter.username)),1)
+
+
 if __name__ == '__main__':
     unittest.main()

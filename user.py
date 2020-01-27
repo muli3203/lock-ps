@@ -57,4 +57,3 @@ class User:
                 the_user=user.username
                 return the_user
 
-    

@@ -10,15 +10,17 @@ class TestCredential(unittest.TestCase):
         """
         A setUp method runs before each testcase
         """
-        self.new_credential = Credential("Cheryl", "twitter", "cher1855")
+        self.new_credential = Credential("Cheryl", "twitter", 
+        "cher1855")
 
-    def __init__(self):
+    def test_init_(self):
         """
         the init method checks if an object is initialized properly
         """
-        
         self.new_credential.username, ("Cheryl")
         self.new_credential.password, ("cher1855")
+        self.new_credential.appname, ("twitter")
+
 
     def tearDown(self):
         """

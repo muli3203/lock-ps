@@ -1,0 +1,1 @@
+[![codebeat badge](https://codebeat.co/badges/59aa0ced-dc66-4122-9745-21ce623b9765)](https://codebeat.co/projects/github-com-muli3203-lock-ps-features-lock-ps)

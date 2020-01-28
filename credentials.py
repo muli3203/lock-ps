@@ -30,3 +30,13 @@ class Credential:
                 users_credential_list.append(credential)
                 return users_credential_list
 
+    @classmethod
+    def find_appname(cls, appname):
+        """
+        takes in an appname and returns the credentials that match the appname
+        """
+        for credential in cls.credential_list:
+            if credential.appname == appname:
+                return credential
+
+                

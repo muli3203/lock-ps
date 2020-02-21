@@ -3,5 +3,6 @@
         "activityBar.background": "#0A3331",
         "titleBar.activeBackground": "#0E4845",
         "titleBar.activeForeground": "#F1FCFC"
-    }
+    },
+    "python.pythonPath": "/usr/bin/python3.6"
 }
